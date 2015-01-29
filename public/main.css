@@ -1,35 +1,34 @@
-* {
-	padding: 5;
-	margin: 0;
-	/*border: 1px solid red;*/
-}
-
 body {
-	font-family: Verdana, sans-serif;
-	width: 500px;
+	width: 600px;
 	margin: auto;
-	background-color: #005f6a;
-	color: white;
 }
 
-ul.nav {
-	padding: 20px;
+.input-group {
+	padding: 5px;
 }
 
-ul.nav li {
-	display: inline;
-	padding: 20px;
+.input-group-addon {
+	min-width: 100px;
+	text-align: left;
 }
 
-a {
-	color: #89fe05;
+#add_contact {
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
 }
 
 footer {
 	margin: 50px;
 	text-align: center;
+	clear: both;
 }
 
+ul {
+	list-style-type: none;
+}
+
+/*
 fieldset {
 	width: 500px;
 }
@@ -54,4 +53,4 @@ input.button {
 fieldset p {
 	clear: both;
 	padding: 5px;
-}
+}*/

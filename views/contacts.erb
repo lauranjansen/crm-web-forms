@@ -6,16 +6,17 @@
 	</head>
 	<body>
 		<h1>Contacts</h1>
-
-		<ul>
-			<% @contacts.each do |contact| %>
+		<% @contacts.each do |contact| %>
+			<ul>
 				<li>
+					<span class="glyphicons glyphicons-user">
 					<a href="/contacts/<%= contact.id %>">
 						<%= contact.first_name %>
 						<%= contact.last_name %>
 					</a>
+					</span>
 				</li>
-			<% end %>
-		</ul>
+			</ul>
+		<% end %>
 	</body>
 </html>
