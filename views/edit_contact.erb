@@ -14,16 +14,16 @@
 				<input class="form-control" type="text" name="last_name" class="textbox" value="<%= @contact.last_name %>"/>
 			</div>
 			<div class="input-group">
-				<span class="input-group-addon" id="basic-addon1">Email&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o fa-fw"></i></span>
+				<span class="input-group-addon" id="basic-addon1">Email<i class="fa fa-envelope-o fa-fw"></i></span>
 				<input class="form-control" type="email" name="email" class="textbox" value="<%= @contact.email %>"/>
 			</div>
 			<div class="input-group">
 				<span class="input-group-addon" id="basic-addon1">Note</span>
 				<input class="form-control" type="text" name="note" class="textbox" value="<%= @contact.note %>"/>
 			</div>
-			<input class="btn btn-success contact_button" type="submit" value="Apply Changes">
-			<a class="btn btn-danger contact_button" href="/contacts">Cancel</a>
-			<input class="btn btn-warning contact_button" type="reset" value="Reset">
+			<button class="btn btn-success contact_button" type="submit"><i class="fa fa-check"></i>Apply Changes</button>
+			<a class="btn btn-danger contact_button" href="/contacts"><i class="fa fa-times"></i>Cancel</a>
+			<button class="btn btn-warning contact_button" type="reset"><i class="fa fa-refresh"></i>Reset</button>
 		</form>
 	</main>
 </body>

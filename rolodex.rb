@@ -17,6 +17,6 @@ class Rolodex
   end
 
   def remove_contact(contact)
-    @contact.delete(contact)
+    @contacts.delete(contact)
   end
 end

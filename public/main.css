@@ -25,13 +25,34 @@ body {
 }
 
 footer {
-	margin: 50px;
+	margin-top: 100px;
 	text-align: center;
 	clear: both;
 }
 
 ul {
 	list-style-type: none;
+}
+
+.fa {
+	margin-right: 5px;
+}
+
+.fa-envelope-o {
+	margin-left: 15px;
+}
+
+.profile_pic {
+	float: left;
+}
+
+.contact_info {
+	float: right;
+	margin: 50px;
+}
+
+.contact_delete {
+	clear: both;
 }
 
 /*
