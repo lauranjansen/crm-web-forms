@@ -6,17 +6,25 @@
 	</head>
 	<body>
 		<h1>Contacts</h1>
-		<% @contacts.each do |contact| %>
-			<ul>
-				<li>
-					<span class="glyphicons glyphicons-user">
-					<a href="/contacts/<%= contact.id %>">
-						<%= contact.first_name %>
-						<%= contact.last_name %>
-					</a>
-					</span>
-				</li>
-			</ul>
-		<% end %>
+		<table class="table">
+			<tr>
+				<td></td>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>Email</td>
+				<td>Note</td>
+				<td>Actions</td>
+			</tr>
+			<% @contacts.each do |contact| %>
+			<tr>
+				<td><a href="/contacts/<%= contact.id %>">View</a></td>
+				<td><%= contact.first_name %></td>
+				<td><%= contact.last_name %></td>
+				<td><%= contact.email %></td>
+				<td><%= contact.note %></td>
+				<td><a href=""><span class="">Edit</span></a><a href=""><span class="">Delete</span></a></td>
+			</tr>
+			<% end %>
+		</table>
 	</body>
 </html>

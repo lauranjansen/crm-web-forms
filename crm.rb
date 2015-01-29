@@ -6,7 +6,7 @@ require 'sinatra/reloader'
 $rolodex = Rolodex.new
 $rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bravo.com", "Rockstar"))
 $rolodex.add_contact(Contact.new("Day Z.", "Kutter", "daisy@cutter.com", "Knife guy"))
-$rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bravo.com", "Rockstar"))
+$rolodex.add_contact(Contact.new("Derek", "Zoolander", "derek@cfkwcrg.com", "Rockstar"))
 
 $crm_name = "My CRM"
 
