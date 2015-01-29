@@ -1,0 +1,57 @@
+* {
+	padding: 5;
+	margin: 0;
+	/*border: 1px solid red;*/
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	width: 500px;
+	margin: auto;
+	background-color: #005f6a;
+	color: white;
+}
+
+ul.nav {
+	padding: 20px;
+}
+
+ul.nav li {
+	display: inline;
+	padding: 20px;
+}
+
+a {
+	color: #89fe05;
+}
+
+footer {
+	margin: 50px;
+	text-align: center;
+}
+
+fieldset {
+	width: 500px;
+}
+legend {
+	font-size: 20px;
+}
+label {
+	text-align: right;
+	width: 100px;
+	float: left;
+	font-weight: bold;
+	padding-right: 5px;
+}
+input.textbox {
+	width: 300px;
+	float: left;
+}
+input.button {
+	margin: 5px;
+	float: right;
+}
+fieldset p {
+	clear: both;
+	padding: 5px;
+}
