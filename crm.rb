@@ -53,13 +53,14 @@ get "/contacts/:id/edit" do
 	end
 end
 
-puts "/contacts/:id" do
+put "/contacts/:id" do
 	@contact = $rolodex.find_contact(params[:id].to_i)
+	puts params
 	if @contact
 		@contact.first_name = params[:first_name]
-		@contact.first_name = params[:last_name]
-		@contact.first_name = params[:email]
-		@contact.first_name = params[:note]
+		@contact.last_name = params[:last_name]
+		@contact.email = params[:email]
+		@contact.note = params[:note]
 
 		redirect to("/contacts")
 	else

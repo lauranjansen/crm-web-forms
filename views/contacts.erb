@@ -17,14 +17,14 @@
 			</tr>
 			<% @contacts.each do |contact| %>
 			<tr>
-				<td><a class="btn btn-xs btn-primary" href="/contacts/<%= contact.id %>"><i class="fa fa-user"></i>&nbsp;View</a></td>
+				<td><a class="btn btn-xs btn-success" href="/contacts/<%= contact.id %>"><i class="fa fa-user"></i>&nbsp;View</a></td>
 				<td><%= contact.first_name %></td>
 				<td><%= contact.last_name %></td>
 				<td><%= contact.email %></td>
 				<td><%= contact.note %></td>
 				<td>
 					<div class="btn-group" role="group">
-						<a class="btn btn-xs btn-warning" href="">
+						<a class="btn btn-xs btn-warning" href="/contacts/<%= contact.id %>/edit">
 							<i class="fa fa-pencil fa-lg"></i>&nbsp;Edit
 						</a>
 						<a class="btn btn-xs btn-danger" href="#">

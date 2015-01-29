@@ -3,7 +3,7 @@
 		<h1>Edit Contact</h1>
 	</header>
 	<main>
-		<form action="/contacts" method="post">
+		<form action="/contacts/<%= @contact.id %>" method="post">
 			<input type="hidden" name="_method" value="put">
 			<div class="input-group">
 				<span class="input-group-addon" id="basic-addon1">First Name</span>
@@ -21,7 +21,9 @@
 				<span class="input-group-addon" id="basic-addon1">Note</span>
 				<input class="form-control" type="text" name="note" class="textbox" value="<%= @contact.note %>"/>
 			</div>
-			<input id="add_contact" class="btn btn-primary" type="submit" value="Edit Contact">
+			<input class="btn btn-success contact_button" type="submit" value="Apply Changes">
+			<a class="btn btn-danger contact_button" href="/contacts">Cancel</a>
+			<input class="btn btn-warning contact_button" type="reset" value="Reset">
 		</form>
 	</main>
 </body>
