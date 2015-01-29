@@ -7,21 +7,21 @@
 			<input type="hidden" name="_method" value="put">
 			<div class="input-group">
 				<span class="input-group-addon" id="basic-addon1">First Name</span>
-				<input class="form-control" type="text" name="first_name" class="textbox" placeholder="John"/>
+				<input class="form-control" type="text" name="first_name" class="textbox" value="<%= @contact.first_name %>"/>
 			</div>
 			<div class="input-group">
 				<span class="input-group-addon" id="basic-addon1">Last Name</span>
-				<input class="form-control" type="text" name="last_name" class="textbox" placeholder="Smith"/>
+				<input class="form-control" type="text" name="last_name" class="textbox" value="<%= @contact.last_name %>"/>
 			</div>
 			<div class="input-group">
 				<span class="input-group-addon" id="basic-addon1">Email&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o fa-fw"></i></span>
-				<input class="form-control" type="email" name="email" class="textbox" placeholder="john@smith.com"/>
+				<input class="form-control" type="email" name="email" class="textbox" value="<%= @contact.email %>"/>
 			</div>
 			<div class="input-group">
 				<span class="input-group-addon" id="basic-addon1">Note</span>
-				<input class="form-control" type="text" name="note" class="textbox" placeholder="Extra information"/>
+				<input class="form-control" type="text" name="note" class="textbox" value="<%= @contact.note %>"/>
 			</div>
-			<input class="btn btn-default" type="submit" value="Add New Contact">
+			<input id="add_contact" class="btn btn-primary" type="submit" value="Edit Contact">
 		</form>
 	</main>
 </body>

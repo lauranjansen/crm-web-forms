@@ -6,7 +6,7 @@ require 'sinatra/reloader'
 $rolodex = Rolodex.new
 $rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bravo.com", "Rockstar"))
 $rolodex.add_contact(Contact.new("Day Z.", "Kutter", "daisy@cutter.com", "Knife guy"))
-$rolodex.add_contact(Contact.new("Derek", "Zoolander", "derek@cfkwcrg.com", "Rockstar"))
+$rolodex.add_contact(Contact.new("Derek", "Zoolander", "derek@cfkwcrg.com", "Supermodel"))
 
 $crm_name = "My CRM"
 
@@ -48,6 +48,20 @@ get "/contacts/:id/edit" do
 	if @contact
 		@title = "Edit Contact - #{$crm_name}"
 		erb :edit_contact
+	else
+		raise Sinatra::NotFound
+	end
+end
+
+puts "/contacts/:id" do
+	@contact = $rolodex.find_contact(params[:id].to_i)
+	if @contact
+		@contact.first_name = params[:first_name]
+		@contact.first_name = params[:last_name]
+		@contact.first_name = params[:email]
+		@contact.first_name = params[:note]
+
+		redirect to("/contacts")
 	else
 		raise Sinatra::NotFound
 	end
